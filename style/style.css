@@ -201,7 +201,7 @@ h2.title {
   background-color: var(--background-dark);
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
@@ -267,15 +267,18 @@ h2.title {
 }
 
 .features-list {
-  display: flex;
+    display: flex;
+}
+
+.features-list__feature-card { 
   gap: 30px;
 }
 
-.features-group {
+.feature-card {
   flex-basis: calc((100% - 90px)/4);
 }
 
-.icon-wrapper {
+.feature-card__icon-wrapper {
   display: flex;
   background-color: #F5F4FA;
   height: 120px;
@@ -285,16 +288,12 @@ h2.title {
   justify-content: center;
 }
 
-.icon-features {
+.feature-card__icon {
   width: 70px;
   height: 70px;
 }
 
-.features-list {
-  list-style: none;
-}
-
-.features-list .title {
+.feature-card__title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -302,11 +301,12 @@ h2.title {
   line-height: 1.14;
   text-align: left;
   font-size: 14px;
-
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--titly-text-color);
 }
 
-.features-list .text {
+.feature-card__text {
   line-height: 1.71;
   text-align: left;
 }
@@ -318,11 +318,12 @@ h2.title {
 }
 
 
-
 .about-cards {
   display: flex;
+}
+
+.about-cards__card {
   gap: 30px;
-  list-style: none;
 }
 
 .card {
@@ -365,7 +366,6 @@ h2.title {
   display: flex;
   gap: 30px;
 
-  list-style: none;
 }
 
 .team-member {
@@ -376,14 +376,14 @@ h2.title {
   background-color: var(--whity-color);
 }
 
-.team-content {
+.team-member__content {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
-.team-list .name {
+.team-member__name {
   margin-bottom: 10px;
 
   color: var(--titly-text-color);
@@ -394,7 +394,7 @@ h2.title {
   text-align: center;
 }
 
-.team-list .position {
+.team-member__position {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
