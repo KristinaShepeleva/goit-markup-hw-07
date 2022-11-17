@@ -400,10 +400,9 @@ h2.title {
   margin-bottom: 16px;
 }
 
-.icons-group {
+.social-links {
   display: flex;
   gap: 10px; 
-  list-style: none;
 }
 
 .social {
@@ -412,22 +411,21 @@ h2.title {
   justify-content: center;
   width: 44px;
   height: 44px;
-  color: var(--icon-color);
-  
-  border-radius: 55px;
-  background-color: var(--whity-color);
-
-  transition-property: color, background-color;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--transition-timing-function);
+  border-radius: 55px; 
 }
-    
-.social:hover {
+ 
+.social--color-bg {
+  color: var(--icon-color);
+  background-color: var(--whity-color);
+  transition: color var(--duration) var(--transition-timing-function), background-color var(--duration) var(--transition-timing-function);
+}
+
+.social--color-bg:hover {
   background-color: var(--accent-color);
   color: var(--whity-color);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
 
@@ -546,7 +544,6 @@ h2.title {
 .footer-icons-group {
   display: flex;
   gap: 10px;
-  list-style: none;
 }
 
 .footer-icons-group .social {
