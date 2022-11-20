@@ -1,5 +1,9 @@
+//  utils
 @import './utils.scss/variables';
+@import './utils.scss/visually-hidden';
 
+
+// components
 @import './components/body';
 @import './components/section';
 @import './components/container';
@@ -8,3 +12,9 @@
 @import './components/page-header';
 @import'./components/hero';
 @import'./components/button';
+@import './components/feature';
+@import './components/about';
+@import './components/team';
+@import './components/social-links';
+@import './components/clients';
+@import './components/footer';
